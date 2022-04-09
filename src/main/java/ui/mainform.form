@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.mainform">
+  <grid id="27dc6" binding="mainpanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="-12" y="20" width="1050" height="900"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1050" height="900"/>
+      <preferredSize width="1050" height="900"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="4d377" binding="toppanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties>
+          <font name="Courier New" size="20" style="1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5bba1" class="javax.swing.JLabel" binding="Title">
+            <constraints/>
+            <properties>
+              <font name="Courier New" size="24" style="1"/>
+              <text value="K-Mean Clustering"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="839fd" binding="infopanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties>
+          <minimumSize width="188" height="40"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="4cf20" binding="datasetpanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9bfc3" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <text value="Dataset"/>
+                </properties>
+              </component>
+              <component id="67a4a" class="javax.swing.JTextField" binding="dataset_text">
+                <constraints/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <columns value="20"/>
+                  <horizontalAlignment value="10"/>
+                </properties>
+              </component>
+              <component id="15c5b" class="javax.swing.JButton" binding="generateDataButton">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value="Generate Data"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="d8441" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Clusters size"/>
+            </properties>
+          </component>
+          <component id="5a5bb" class="javax.swing.JTextField" binding="cluster_text">
+            <constraints/>
+            <properties>
+              <columns value="20"/>
+            </properties>
+          </component>
+          <component id="4b5a8" class="javax.swing.JButton" binding="clusterButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <enabled value="false"/>
+              <text value="Cluster"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="dd637" class="org.jfree.chart.ChartPanel" binding="chartPanel1" custom-create="true" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
